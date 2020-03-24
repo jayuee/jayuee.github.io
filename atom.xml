@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-24T06:43:44.943Z</updated>
+  <updated>2020-03-24T10:55:53.559Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HEXO</title>
+    <link href="http://yoursite.com/2020/03/24/test/"/>
+    <id>http://yoursite.com/2020/03/24/test/</id>
+    <published>2020-03-24T10:53:06.462Z</published>
+    <updated>2020-03-24T10:55:53.559Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h1><p>hauhhsaudha</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前沿&quot;&gt;&lt;a href=&quot;#前沿&quot; class=&quot;headerlink&quot; title=&quot;前沿&quot;&gt;&lt;/a&gt;前沿&lt;/h1&gt;&lt;p&gt;hauhhsaudha&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="-jju" scheme="http://yoursite.com/categories/jju/"/>
+    
+    
+      <category term="-mark" scheme="http://yoursite.com/tags/mark/"/>
+    
+  </entry>
   
   <entry>
     <title>C语言-顺序结构</title>
