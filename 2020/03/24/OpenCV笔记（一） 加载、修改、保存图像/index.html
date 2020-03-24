@@ -100,19 +100,20 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-OpenCV," />
 
 
-<meta name="description" content="[toc] OpenCV笔记（一） 加载、修改、保存图像加载图像（cv::imread） imread功能是加载图像文件成为一个Mat对象，其中第一个参数表示图像文件名称 第二个参数，表示加载的图像是什么类型，支持常见的三个参数值 IMREAD_UNCHANGED (&lt;0) 表示加载原图，不做任何改变 IMREAD_GRAYSCALE ( 0)表示把原图作为灰度图像加载进来 IMREAD_C">
+<meta name="description" content="学习OpenCV的笔记与心得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenCV笔记（一） 加载、修改、保存图像">
 <meta property="og:url" content="http://yoursite.com/2020/03/24/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%20%E5%8A%A0%E8%BD%BD%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E4%BF%9D%E5%AD%98%E5%9B%BE%E5%83%8F/index.html">
 <meta property="og:site_name" content="jayuee">
-<meta property="og:description" content="[toc] OpenCV笔记（一） 加载、修改、保存图像加载图像（cv::imread） imread功能是加载图像文件成为一个Mat对象，其中第一个参数表示图像文件名称 第二个参数，表示加载的图像是什么类型，支持常见的三个参数值 IMREAD_UNCHANGED (&lt;0) 表示加载原图，不做任何改变 IMREAD_GRAYSCALE ( 0)表示把原图作为灰度图像加载进来 IMREAD_C">
+<meta property="og:description" content="学习OpenCV的笔记与心得">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-24T08:24:15.638Z">
-<meta property="article:modified_time" content="2020-03-19T14:07:08.334Z">
+<meta property="article:modified_time" content="2020-03-24T15:40:53.290Z">
 <meta property="article:author" content="Kratze-Jayue">
+<meta property="article:tag" content="-OpenCV">
 <meta name="twitter:card" content="summary">
 
 
@@ -215,31 +216,31 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
         </li>
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
+          <a href="/about/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
         </li>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
         </li>
       
@@ -305,6 +306,9 @@
         
 
         <div class="post-meta">
+
+
+		  
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -322,6 +326,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" itemprop="url" rel="index"><span itemprop="name">计算机视觉</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -349,7 +371,7 @@
                 
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="字数统计">5.1k</span>
+                <span title="字数统计">4.9k</span>
               
 
               
@@ -383,8 +405,10 @@
       
 
       
-        <p>[toc]</p>
-<h1 id="OpenCV笔记（一）-加载、修改、保存图像"><a href="#OpenCV笔记（一）-加载、修改、保存图像" class="headerlink" title="OpenCV笔记（一） 加载、修改、保存图像"></a>OpenCV笔记（一） 加载、修改、保存图像</h1><h2 id="加载图像（cv-imread）"><a href="#加载图像（cv-imread）" class="headerlink" title="加载图像（cv::imread）"></a>加载图像（cv::imread）</h2><ul>
+        <p>学习OpenCV的笔记与心得</p>
+<a id="more"></a>
+
+<h2 id="加载图像（cv-imread）"><a href="#加载图像（cv-imread）" class="headerlink" title="加载图像（cv::imread）"></a>加载图像（cv::imread）</h2><ul>
 <li><strong>imread</strong>功能是加载图像文件成为一个<strong>Mat</strong>对象，其中第一个参数表示图像文件名称</li>
 <li>第二个参数，表示加载的图像是什么类型，支持常见的三个参数值</li>
 <li>IMREAD_UNCHANGED (&lt;0) 表示加载原图，不做任何改变</li>
@@ -458,6 +482,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/OpenCV/" rel="tag"><i class="fa fa-tag"></i> -OpenCV</a>
+          
+        </div>
+      
 
       
       
@@ -467,8 +497,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/03/24/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" rel="next" title="Hexo搭建博客网站">
-                <i class="fa fa-chevron-left"></i> Hexo搭建博客网站
+              <a href="/2020/03/24/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" rel="next" title="Hexo搭建网站">
+                <i class="fa fa-chevron-left"></i> Hexo搭建网站
               </a>
             
           </div>
@@ -558,9 +588,9 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/%20%7C%7C%20archive">
+                  <a href="/archives">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -570,14 +600,18 @@
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -585,14 +619,20 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -647,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenCV笔记（一）-加载、修改、保存图像"><span class="nav-text">OpenCV笔记（一） 加载、修改、保存图像</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#加载图像（cv-imread）"><span class="nav-text">加载图像（cv::imread）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改图像（cv-cvtColor）"><span class="nav-text">修改图像（cv::cvtColor）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示图像（cv-nameWindows与cv-imshow）"><span class="nav-text">显示图像（cv::nameWindows与cv::imshow）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存图像（cv-imwrite）"><span class="nav-text">保存图像（cv::imwrite）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#加载图像（cv-imread）"><span class="nav-text">加载图像（cv::imread）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改图像（cv-cvtColor）"><span class="nav-text">修改图像（cv::cvtColor）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示图像（cv-nameWindows与cv-imshow）"><span class="nav-text">显示图像（cv::nameWindows与cv::imshow）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存图像（cv-imwrite）"><span class="nav-text">保存图像（cv::imwrite）</span></a></li></ol></div>
             
 
           </div>
@@ -680,7 +720,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">17k</span>
   
 
   
@@ -689,7 +729,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点总阅读时长">14 mins.</span>
+    <span title="站点总阅读时长">17 mins.</span>
   
 </div>
 

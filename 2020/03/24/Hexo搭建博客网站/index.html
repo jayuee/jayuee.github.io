@@ -100,15 +100,15 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="-Hexo," />
 
 
-<meta name="description" content="Hexo搭建博客网站环境配置1.安装 Node.js打开 官网下载  2.安装 Git打开 官网下载  下载速度可能有点慢，还有另外一种下载方式，通过  腾讯软件中心下载   这个速度就很nice了  Git Bash下载下来相当于就相当于Linux的终端窗口 ,就是windows里的cmd  在桌面右键打开&#x3D;&#x3D;Git Bash Here&#x3D;&#x3D; 输入下面命令，查看安装是否成功 1git   配置Gi">
+<meta name="description" content="用Hexo搭建博客的过程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建博客网站">
+<meta property="og:title" content="Hexo搭建网站">
 <meta property="og:url" content="http://yoursite.com/2020/03/24/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/index.html">
 <meta property="og:site_name" content="jayuee">
-<meta property="og:description" content="Hexo搭建博客网站环境配置1.安装 Node.js打开 官网下载  2.安装 Git打开 官网下载  下载速度可能有点慢，还有另外一种下载方式，通过  腾讯软件中心下载   这个速度就很nice了  Git Bash下载下来相当于就相当于Linux的终端窗口 ,就是windows里的cmd  在桌面右键打开&#x3D;&#x3D;Git Bash Here&#x3D;&#x3D; 输入下面命令，查看安装是否成功 1git   配置Gi">
+<meta property="og:description" content="用Hexo搭建博客的过程">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70">
@@ -127,8 +127,9 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200321181127723.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200321181107940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-03-24T07:51:51.832Z">
-<meta property="article:modified_time" content="2020-03-24T05:09:49.753Z">
+<meta property="article:modified_time" content="2020-03-24T15:53:25.286Z">
 <meta property="article:author" content="Kratze-Jayue">
+<meta property="article:tag" content="-Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70">
 
@@ -148,7 +149,7 @@
     sidebar: "",
   };
 </script>
-  <title>Hexo搭建博客网站 | jayuee</title>
+  <title>Hexo搭建网站 | jayuee</title>
   
 
 
@@ -232,31 +233,31 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
         </li>
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
+          <a href="/about/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
         </li>
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
         </li>
       
@@ -318,10 +319,17 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo搭建博客网站</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo搭建网站</h1>
         
 
         <div class="post-meta">
+
+
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+		  
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -339,6 +347,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/" itemprop="url" rel="index"><span itemprop="name">软件配置</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -400,7 +426,10 @@
       
 
       
-        <h1 id="Hexo搭建博客网站"><a href="#Hexo搭建博客网站" class="headerlink" title="Hexo搭建博客网站"></a>Hexo搭建博客网站</h1><h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1.安装 Node.js"></a>1.安装 Node.js</h3><p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
+        <p>用Hexo搭建博客的过程</p>
+<a id="more"></a>
+
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1.安装 Node.js"></a>1.安装 Node.js</h3><p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
 <p><img src="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h3 id="2-安装-Git"><a href="#2-安装-Git" class="headerlink" title="2.安装 Git"></a>2.安装 Git</h3><p>打开 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网下载</a></p>
 <p><img src="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
@@ -547,6 +576,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> -Hexo</a>
+          
+        </div>
+      
 
       
       
@@ -643,9 +678,9 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/%20%7C%7C%20archive">
+                  <a href="/archives">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -655,14 +690,18 @@
                 
                 
                 <div class="site-state-item site-state-categories">
-                  
+                  <a href="/categories/index.html">
                     
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -670,14 +709,20 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -732,7 +777,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo搭建博客网站"><span class="nav-text">Hexo搭建博客网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装-Node-js"><span class="nav-text">1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装-Git"><span class="nav-text">2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git"><span class="nav-text">配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-进入-ssh文件夹"><span class="nav-text">1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-设置用户名称和登录邮箱"><span class="nav-text">2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-生成密钥"><span class="nav-text">3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-查看生成的密钥"><span class="nav-text">4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-测试是否成功"><span class="nav-text">5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装hexo"><span class="nav-text">3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运行测试"><span class="nav-text">4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-传输云端"><span class="nav-text">5.传输云端</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装-Node-js"><span class="nav-text">1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装-Git"><span class="nav-text">2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git"><span class="nav-text">配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-进入-ssh文件夹"><span class="nav-text">1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-设置用户名称和登录邮箱"><span class="nav-text">2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-生成密钥"><span class="nav-text">3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-查看生成的密钥"><span class="nav-text">4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-测试是否成功"><span class="nav-text">5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装hexo"><span class="nav-text">3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运行测试"><span class="nav-text">4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-传输云端"><span class="nav-text">5.传输云端</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -765,7 +810,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">17k</span>
   
 
   
@@ -774,7 +819,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点总阅读时长">14 mins.</span>
+    <span title="站点总阅读时长">17 mins.</span>
   
 </div>
 
