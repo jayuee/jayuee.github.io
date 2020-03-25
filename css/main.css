@@ -2059,7 +2059,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f7c693;
+  background: #e4ffec;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3179,55 +3179,9 @@ body {
 :active {
   cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
 }
-article:not(:first-of-type) .post-block .set-top div {
-  display: none;
+.header-inner {
+  opacity: 0.8;
 }
-article:last-of-type .post-block .set-top div {
-  display: none;
-}
-article:first-of-type .post-block .set-top {
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  position: absolute;
-  top: -3px;
-  right: -3px;
-}
-article:first-of-type .post-block .set-top div {
-  line-height: 18px;
-  text-align: center;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  position: relative;
-  padding: 3px 0;
-  top: 12px;
-  width: 113px;
-  background-color: #0bf;
-  color: #fff;
-  box-shadow: -3px 5px 6px -5px rgba(0,0,0,0.5);
-  background: -webkit-linear-gradient(left, rgba(48,182,209,0.99), rgba(43,70,191,0.99) 100%);
-}
-article:first-of-type .set-top>div:before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 100%;
-  z-index: -1;
-  border-left: 4px solid #31a4ce;
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid #31a4ce;
-}
-article:first-of-type .set-top>div:after {
-  content: "";
-  position: absolute;
-  right: 6px;
-  top: 100%;
-  z-index: -1;
-  border-left: 4px solid transparent;
-  border-right: 4px solid #2f5ec3;
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid #2f5ec3;
+.main-inner {
+  opacity: 0.8;
 }
