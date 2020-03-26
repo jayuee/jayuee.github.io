@@ -263,9 +263,40 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -424,104 +455,91 @@
       
         <p>Hexo搭建博客的过程</p>
 <a id="more"></a>
-<h1 id="环境配置"><a class="markdownIt-Anchor" href="#环境配置"></a> 环境配置</h1>
-<h3 id="1安装-nodejs"><a class="markdownIt-Anchor" href="#1安装-nodejs"></a> 1.安装 Node.js</h3>
-<p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="2安装-git"><a class="markdownIt-Anchor" href="#2安装-git"></a> 2.安装 Git</h3>
-<p>打开 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网下载</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1.安装 Node.js"></a>1.安装 Node.js</h3><p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-安装-Git"><a href="#2-安装-Git" class="headerlink" title="2.安装 Git"></a>2.安装 Git</h3><p>打开 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网下载</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>下载速度可能有点慢，还有另外一种下载方式，通过  <a href="https://pc.qq.com/search.html#!keyword=git" target="_blank" rel="noopener">腾讯软件中心下载</a>   这个速度就很nice了</p>
 <blockquote>
 <p>Git Bash下载下来相当于就相当于Linux的终端窗口 ,就是windows里的cmd</p>
 </blockquote>
-<p>在桌面右键打开<mark>Git Bash Here</mark></p>
+<p>在桌面右键打开==Git Bash Here==</p>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180456621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="" /></p>
-<h4 id="配置git"><a class="markdownIt-Anchor" href="#配置git"></a> 配置Git</h4>
-<p><strong>后续会用到，如果配置过请忽略</strong></p>
-<h5 id="1进入ssh文件夹"><a class="markdownIt-Anchor" href="#1进入ssh文件夹"></a> 1.进入.ssh文件夹</h5>
-<p>打开Git Bash Here后，输入指令  <em>注意~前有空格</em></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180456621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h4 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h4><p><strong>后续会用到，如果配置过请忽略</strong></p>
+<h5 id="1-进入-ssh文件夹"><a href="#1-进入-ssh文件夹" class="headerlink" title="1.进入.ssh文件夹"></a>1.进入.ssh文件夹</h5><p>打开Git Bash Here后，输入指令  <em>注意~前有空格</em></p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh/</span><br></pre></td></tr></table></figure>
-<p>如果提示“No such file or directory&quot; 那么可以输入下面指令来创建文件夹</p>
+<p>如果提示“No such file or directory” 那么可以输入下面指令来创建文件夹</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180808729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h5 id="2设置用户名称和登录邮箱"><a class="markdownIt-Anchor" href="#2设置用户名称和登录邮箱"></a> 2.设置用户名称和登录邮箱</h5>
-<p>配置你的github，这里的是你的github的用户名和email</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180808729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="2-设置用户名称和登录邮箱"><a href="#2-设置用户名称和登录邮箱" class="headerlink" title="2.设置用户名称和登录邮箱"></a>2.设置用户名称和登录邮箱</h5><p>配置你的github，这里的是你的github的用户名和email</p>
 <p>配置的命令如下</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "用户名称"</span><br><span class="line">git config --global user.email "登陆邮箱"</span><br></pre></td></tr></table></figure>
-<h5 id="3生成密钥"><a class="markdownIt-Anchor" href="#3生成密钥"></a> 3.生成密钥</h5>
-<p>命令如下</p>
+<h5 id="3-生成密钥"><a href="#3-生成密钥" class="headerlink" title="3.生成密钥"></a>3.生成密钥</h5><p>命令如下</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa-C "登录邮箱"</span><br></pre></td></tr></table></figure>
-<h5 id="4查看生成的密钥"><a class="markdownIt-Anchor" href="#4查看生成的密钥"></a> 4.查看生成的密钥</h5>
-<p>查看密钥位置，命令如下</p>
+<h5 id="4-查看生成的密钥"><a href="#4-查看生成的密钥" class="headerlink" title="4.查看生成的密钥"></a>4.查看生成的密钥</h5><p>查看密钥位置，命令如下</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pwd</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180837536.png" alt="在这里插入图片描述" /><br />
-<img src="https://img-blog.csdnimg.cn/20200321180635809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180837536.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200321180635809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>打开.ssh文件夹下的id_rsa.pub文件夹的内容，全部复制。然后登录你的github服务器个人账户设置中，寻找ssh key 菜单项，点击New SSH key ,然后粘贴即可.</p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180855229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h5 id="5测试是否成功"><a class="markdownIt-Anchor" href="#5测试是否成功"></a> 5.测试是否成功</h5>
-<p>输入命令</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180855229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="5-测试是否成功"><a href="#5-测试是否成功" class="headerlink" title="5.测试是否成功"></a>5.测试是否成功</h5><p>输入命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180919326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="3安装hexo"><a class="markdownIt-Anchor" href="#3安装hexo"></a> 3.安装hexo</h3>
-<ol>
+<p><img src="https://img-blog.csdnimg.cn/20200321180919326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><ol>
 <li>新建一个文件夹，我的文件夹名称是Blog, 位置在D:\Blog</li>
-<li>打开文件夹，然后在空白处点鼠标的右键，选择<mark>Git Bash Here</mark></li>
+<li>打开文件夹，然后在空白处点鼠标的右键，选择==Git Bash Here==</li>
 <li>输入下面命令，查看安装是否成功</li>
 </ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180936975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-4. 我们需要先来装个cnpm提高速度，以后下载东西都用cnpm就ok了</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180936975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li><p>我们需要先来装个cnpm提高速度，以后下载东西都用cnpm就ok了</p>
 <p>在上面终端继续输入</p>
+</li>
+</ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cnpm</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180946312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180946312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>完成之后安装hexo</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/2020032118095441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-输入查看当前路径命令</p>
+<p><img src="https://img-blog.csdnimg.cn/2020032118095441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>输入查看当前路径命令</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pwd</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180959380.png" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180959380.png" alt="在这里插入图片描述"></p>
 <p>然后运行命令，建立项目，我的文件夹名字Blog,文件夹位置在D盘</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <p>结果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200321181007697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-<img src="https://img-blog.csdnimg.cn/20200321184417952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="4运行测试"><a class="markdownIt-Anchor" href="#4运行测试"></a> 4.运行测试</h3>
-<p>下面是经常用到的命令</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181007697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200321184417952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="4-运行测试"><a href="#4-运行测试" class="headerlink" title="4.运行测试"></a>4.运行测试</h3><p>下面是经常用到的命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #用来清理缓存文件</span><br><span class="line">hexo g      #生成文件</span><br><span class="line">hexo  s     #运行本地服务器</span><br><span class="line">hexo  d   #上传到服务器</span><br></pre></td></tr></table></figure>
 <p>运行hexo</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321181127723.png" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181127723.png" alt="在这里插入图片描述"></p>
 <p>打开浏览器，输入</p>
 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:<span class="number">4000</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321181107940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-<strong>出现这个，就说明本地环境搭载完成</strong></p>
-<h3 id="5传输云端"><a class="markdownIt-Anchor" href="#5传输云端"></a> 5.传输云端</h3>
-<p>打开github,新建仓库，仓库名必须为 <mark>github的用户名.github.io</mark></p>
-<p>例如，github用户名为 mike ,那么你的仓库名必须为 <a href="http://mike.github.io" target="_blank" rel="noopener">mike.github.io</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181107940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>出现这个，就说明本地环境搭载完成</strong></p>
+<h3 id="5-传输云端"><a href="#5-传输云端" class="headerlink" title="5.传输云端"></a>5.传输云端</h3><p>打开github,新建仓库，仓库名必须为 ==github的用户名.github.io==</p>
+<p>例如，github用户名为 mike ,那么你的仓库名必须为 mike.github.io</p>
 <p>然后在 Blog文件夹的位置打开git</p>
 <p>输入命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>打开Blog目录下的_config.yml</p>
 <p>在最后找到</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="attribute">deploy:</span></span><br><span class="line"><span class="attribute">type:</span></span><br></pre></td></tr></table></figure>
-<p>将其改为  <mark>注意：后有个空格</mark></p>
+<p>将其改为  ==注意：后有个空格==</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="attribute">deploy:</span></span><br><span class="line">  type: git</span><br><span class="line">  repo: 填写你github刚建仓库的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>然后在命令行输入</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>如果不成功就输入一下三部曲</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>成功之后在网站输入你的<mark>仓库名</mark>就可以访问云端了。</p>
+<p>成功之后在网站输入你的==仓库名==就可以访问云端了。</p>
 <p>由此博客网站就搭建成功了</p>
-<p>在此感谢我的伙伴 <em><strong>博哥</strong></em></p>
-<p><em><strong>UP主</strong></em> <a href="https://www.bilibili.com/video/av44544186?t=1686" target="_blank" rel="noopener">Codesheep</a></p>
-<p><a href="%5Bhttps://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more%5D(https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more)">Hexo参考文档</a></p>
+<p>在此感谢我的伙伴 <strong><em>博哥</em></strong></p>
+<p><strong><em>UP主</em></strong> <a href="https://www.bilibili.com/video/av44544186?t=1686" target="_blank" rel="noopener">Codesheep</a></p>
+<p><a href="[https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more](https://caiyantao.gitee.io/2019/04/13/Hexo-一/#more">Hexo参考文档</a>)</p>
 <p><a href="https://blog.csdn.net/xiaoyu19910321/article/details/90346604" target="_blank" rel="noopener">git参考文档</a></p>
 
       
@@ -674,7 +692,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -775,7 +793,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text"> 环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1安装-nodejs"><span class="nav-text"> 1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2安装-git"><span class="nav-text"> 2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置git"><span class="nav-text"> 配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1进入ssh文件夹"><span class="nav-text"> 1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2设置用户名称和登录邮箱"><span class="nav-text"> 2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3生成密钥"><span class="nav-text"> 3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4查看生成的密钥"><span class="nav-text"> 4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5测试是否成功"><span class="nav-text"> 5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3安装hexo"><span class="nav-text"> 3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4运行测试"><span class="nav-text"> 4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5传输云端"><span class="nav-text"> 5.传输云端</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装-Node-js"><span class="nav-text">1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装-Git"><span class="nav-text">2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git"><span class="nav-text">配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-进入-ssh文件夹"><span class="nav-text">1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-设置用户名称和登录邮箱"><span class="nav-text">2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-生成密钥"><span class="nav-text">3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-查看生成的密钥"><span class="nav-text">4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-测试是否成功"><span class="nav-text">5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装hexo"><span class="nav-text">3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运行测试"><span class="nav-text">4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-传输云端"><span class="nav-text">5.传输云端</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -991,6 +1009,326 @@
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "./public/search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
