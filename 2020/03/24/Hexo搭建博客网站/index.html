@@ -28,6 +28,8 @@
 
 
 
+  <meta name="google-site-verification" content="Rb_Shxe6AHBAFayB0cZjofGBjDytvTB4pi7VtAABlI4" />
+
 
 
 
@@ -455,104 +457,91 @@
       
         <p>Hexo搭建博客的过程</p>
 <a id="more"></a>
-<h1 id="环境配置"><a class="markdownIt-Anchor" href="#环境配置"></a> 环境配置</h1>
-<h3 id="1安装-nodejs"><a class="markdownIt-Anchor" href="#1安装-nodejs"></a> 1.安装 Node.js</h3>
-<p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="2安装-git"><a class="markdownIt-Anchor" href="#2安装-git"></a> 2.安装 Git</h3>
-<p>打开 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网下载</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h3 id="1-安装-Node-js"><a href="#1-安装-Node-js" class="headerlink" title="1.安装 Node.js"></a>1.安装 Node.js</h3><p>打开 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网下载</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180442955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-安装-Git"><a href="#2-安装-Git" class="headerlink" title="2.安装 Git"></a>2.安装 Git</h3><p>打开 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官网下载</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180412274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>下载速度可能有点慢，还有另外一种下载方式，通过  <a href="https://pc.qq.com/search.html#!keyword=git" target="_blank" rel="noopener">腾讯软件中心下载</a>   这个速度就很nice了</p>
 <blockquote>
 <p>Git Bash下载下来相当于就相当于Linux的终端窗口 ,就是windows里的cmd</p>
 </blockquote>
-<p>在桌面右键打开<mark>Git Bash Here</mark></p>
+<p>在桌面右键打开==Git Bash Here==</p>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180456621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="" /></p>
-<h4 id="配置git"><a class="markdownIt-Anchor" href="#配置git"></a> 配置Git</h4>
-<p><strong>后续会用到，如果配置过请忽略</strong></p>
-<h5 id="1进入ssh文件夹"><a class="markdownIt-Anchor" href="#1进入ssh文件夹"></a> 1.进入.ssh文件夹</h5>
-<p>打开Git Bash Here后，输入指令  <em>注意~前有空格</em></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180456621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h4 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h4><p><strong>后续会用到，如果配置过请忽略</strong></p>
+<h5 id="1-进入-ssh文件夹"><a href="#1-进入-ssh文件夹" class="headerlink" title="1.进入.ssh文件夹"></a>1.进入.ssh文件夹</h5><p>打开Git Bash Here后，输入指令  <em>注意~前有空格</em></p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh/</span><br></pre></td></tr></table></figure>
-<p>如果提示“No such file or directory&quot; 那么可以输入下面指令来创建文件夹</p>
+<p>如果提示“No such file or directory” 那么可以输入下面指令来创建文件夹</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180808729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h5 id="2设置用户名称和登录邮箱"><a class="markdownIt-Anchor" href="#2设置用户名称和登录邮箱"></a> 2.设置用户名称和登录邮箱</h5>
-<p>配置你的github，这里的是你的github的用户名和email</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180808729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="2-设置用户名称和登录邮箱"><a href="#2-设置用户名称和登录邮箱" class="headerlink" title="2.设置用户名称和登录邮箱"></a>2.设置用户名称和登录邮箱</h5><p>配置你的github，这里的是你的github的用户名和email</p>
 <p>配置的命令如下</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "用户名称"</span><br><span class="line">git config --global user.email "登陆邮箱"</span><br></pre></td></tr></table></figure>
-<h5 id="3生成密钥"><a class="markdownIt-Anchor" href="#3生成密钥"></a> 3.生成密钥</h5>
-<p>命令如下</p>
+<h5 id="3-生成密钥"><a href="#3-生成密钥" class="headerlink" title="3.生成密钥"></a>3.生成密钥</h5><p>命令如下</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa-C "登录邮箱"</span><br></pre></td></tr></table></figure>
-<h5 id="4查看生成的密钥"><a class="markdownIt-Anchor" href="#4查看生成的密钥"></a> 4.查看生成的密钥</h5>
-<p>查看密钥位置，命令如下</p>
+<h5 id="4-查看生成的密钥"><a href="#4-查看生成的密钥" class="headerlink" title="4.查看生成的密钥"></a>4.查看生成的密钥</h5><p>查看密钥位置，命令如下</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pwd</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180837536.png" alt="在这里插入图片描述" /><br />
-<img src="https://img-blog.csdnimg.cn/20200321180635809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180837536.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200321180635809.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>打开.ssh文件夹下的id_rsa.pub文件夹的内容，全部复制。然后登录你的github服务器个人账户设置中，寻找ssh key 菜单项，点击New SSH key ,然后粘贴即可.</p>
-<p><img src="https://img-blog.csdnimg.cn/20200321180855229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h5 id="5测试是否成功"><a class="markdownIt-Anchor" href="#5测试是否成功"></a> 5.测试是否成功</h5>
-<p>输入命令</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180855229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h5 id="5-测试是否成功"><a href="#5-测试是否成功" class="headerlink" title="5.测试是否成功"></a>5.测试是否成功</h5><p>输入命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh git@github.com</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180919326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="3安装hexo"><a class="markdownIt-Anchor" href="#3安装hexo"></a> 3.安装hexo</h3>
-<ol>
+<p><img src="https://img-blog.csdnimg.cn/20200321180919326.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><ol>
 <li>新建一个文件夹，我的文件夹名称是Blog, 位置在D:\Blog</li>
-<li>打开文件夹，然后在空白处点鼠标的右键，选择<mark>Git Bash Here</mark></li>
+<li>打开文件夹，然后在空白处点鼠标的右键，选择==Git Bash Here==</li>
 <li>输入下面命令，查看安装是否成功</li>
 </ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180936975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-4. 我们需要先来装个cnpm提高速度，以后下载东西都用cnpm就ok了</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180936975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li><p>我们需要先来装个cnpm提高速度，以后下载东西都用cnpm就ok了</p>
 <p>在上面终端继续输入</p>
+</li>
+</ol>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cnpm</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180946312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180946312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>完成之后安装hexo</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>输入下面命令，查看安装是否成功</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/2020032118095441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-输入查看当前路径命令</p>
+<p><img src="https://img-blog.csdnimg.cn/2020032118095441.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>输入查看当前路径命令</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pwd</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321180959380.png" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321180959380.png" alt="在这里插入图片描述"></p>
 <p>然后运行命令，建立项目，我的文件夹名字Blog,文件夹位置在D盘</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <p>结果如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/20200321181007697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-<img src="https://img-blog.csdnimg.cn/20200321184417952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<h3 id="4运行测试"><a class="markdownIt-Anchor" href="#4运行测试"></a> 4.运行测试</h3>
-<p>下面是经常用到的命令</p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181007697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200321184417952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="4-运行测试"><a href="#4-运行测试" class="headerlink" title="4.运行测试"></a>4.运行测试</h3><p>下面是经常用到的命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #用来清理缓存文件</span><br><span class="line">hexo g      #生成文件</span><br><span class="line">hexo  s     #运行本地服务器</span><br><span class="line">hexo  d   #上传到服务器</span><br></pre></td></tr></table></figure>
 <p>运行hexo</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321181127723.png" alt="在这里插入图片描述" /></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181127723.png" alt="在这里插入图片描述"></p>
 <p>打开浏览器，输入</p>
 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:<span class="number">4000</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200321181107940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-<strong>出现这个，就说明本地环境搭载完成</strong></p>
-<h3 id="5传输云端"><a class="markdownIt-Anchor" href="#5传输云端"></a> 5.传输云端</h3>
-<p>打开github,新建仓库，仓库名必须为 <mark>github的用户名.github.io</mark></p>
-<p>例如，github用户名为 mike ,那么你的仓库名必须为 <a href="http://mike.github.io" target="_blank" rel="noopener">mike.github.io</a></p>
+<p><img src="https://img-blog.csdnimg.cn/20200321181107940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>出现这个，就说明本地环境搭载完成</strong></p>
+<h3 id="5-传输云端"><a href="#5-传输云端" class="headerlink" title="5.传输云端"></a>5.传输云端</h3><p>打开github,新建仓库，仓库名必须为 ==github的用户名.github.io==</p>
+<p>例如，github用户名为 mike ,那么你的仓库名必须为 mike.github.io</p>
 <p>然后在 Blog文件夹的位置打开git</p>
 <p>输入命令</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>打开Blog目录下的_config.yml</p>
 <p>在最后找到</p>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="attribute">deploy:</span></span><br><span class="line"><span class="attribute">type:</span></span><br></pre></td></tr></table></figure>
-<p>将其改为  <mark>注意：后有个空格</mark></p>
+<p>将其改为  ==注意：后有个空格==</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="attribute">deploy:</span></span><br><span class="line">  type: git</span><br><span class="line">  repo: 填写你github刚建仓库的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>然后在命令行输入</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>如果不成功就输入一下三部曲</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>成功之后在网站输入你的<mark>仓库名</mark>就可以访问云端了。</p>
+<p>成功之后在网站输入你的==仓库名==就可以访问云端了。</p>
 <p>由此博客网站就搭建成功了</p>
-<p>在此感谢我的伙伴 <em><strong>博哥</strong></em></p>
-<p><em><strong>UP主</strong></em> <a href="https://www.bilibili.com/video/av44544186?t=1686" target="_blank" rel="noopener">Codesheep</a></p>
-<p><a href="%5Bhttps://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more%5D(https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more)">Hexo参考文档</a></p>
+<p>在此感谢我的伙伴 <strong><em>博哥</em></strong></p>
+<p><strong><em>UP主</em></strong> <a href="https://www.bilibili.com/video/av44544186?t=1686" target="_blank" rel="noopener">Codesheep</a></p>
+<p><a href="[https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/#more](https://caiyantao.gitee.io/2019/04/13/Hexo-一/#more">Hexo参考文档</a>)</p>
 <p><a href="https://blog.csdn.net/xiaoyu19910321/article/details/90346604" target="_blank" rel="noopener">git参考文档</a></p>
 
       
@@ -806,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text"> 环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1安装-nodejs"><span class="nav-text"> 1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2安装-git"><span class="nav-text"> 2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置git"><span class="nav-text"> 配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1进入ssh文件夹"><span class="nav-text"> 1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2设置用户名称和登录邮箱"><span class="nav-text"> 2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3生成密钥"><span class="nav-text"> 3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4查看生成的密钥"><span class="nav-text"> 4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5测试是否成功"><span class="nav-text"> 5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3安装hexo"><span class="nav-text"> 3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4运行测试"><span class="nav-text"> 4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5传输云端"><span class="nav-text"> 5.传输云端</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装-Node-js"><span class="nav-text">1.安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装-Git"><span class="nav-text">2.安装 Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git"><span class="nav-text">配置Git</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-进入-ssh文件夹"><span class="nav-text">1.进入.ssh文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-设置用户名称和登录邮箱"><span class="nav-text">2.设置用户名称和登录邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-生成密钥"><span class="nav-text">3.生成密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-查看生成的密钥"><span class="nav-text">4.查看生成的密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-测试是否成功"><span class="nav-text">5.测试是否成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装hexo"><span class="nav-text">3.安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运行测试"><span class="nav-text">4.运行测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-传输云端"><span class="nav-text">5.传输云端</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1387,7 +1376,12 @@
   
 
   
-  <script type="text/javascript" src="/js/src/exturl.js?v=6.0.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.0.4"></script>
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1404,12 +1398,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
-
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+<!-- hexo-inject:end --></body>
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
