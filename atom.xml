@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-26T10:32:33.517Z</updated>
+  <updated>2020-03-26T05:03:12.507Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>google79fca3c6ae3c8e51</title>
-    <link href="http://yoursite.com/2020/03/26/google79fca3c6ae3c8e51/"/>
-    <id>http://yoursite.com/2020/03/26/google79fca3c6ae3c8e51/</id>
-    <published>2020-03-26T10:32:26.338Z</published>
-    <updated>2020-03-26T10:32:33.517Z</updated>
-    
-    <content type="html"><![CDATA[google-site-verification: google79fca3c6ae3c8e51.html]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        google-site-verification: google79fca3c6ae3c8e51.html
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>OpenCV笔记（三）图像处理教程</title>
