@@ -302,6 +302,11 @@
     
 
 
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -424,7 +429,7 @@
                 
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="字数统计">5.1k</span>
+                <span title="字数统计">5.2k</span>
               
 
               
@@ -460,8 +465,7 @@
       
         <p>加载、修改、保存图像的函数</p>
 <a id="more"></a>
-<h2 id="加载图像cvimread"><a class="markdownIt-Anchor" href="#加载图像cvimread"></a> 加载图像（cv::imread）</h2>
-<ul>
+<h2 id="加载图像（cv-imread）"><a href="#加载图像（cv-imread）" class="headerlink" title="加载图像（cv::imread）"></a>加载图像（cv::imread）</h2><ul>
 <li><strong>imread</strong>功能是加载图像文件成为一个<strong>Mat</strong>对象，其中第一个参数表示图像文件名称</li>
 <li>第二个参数，表示加载的图像是什么类型，支持常见的三个参数值</li>
 <li>IMREAD_UNCHANGED (&lt;0) 表示加载原图，不做任何改变</li>
@@ -469,25 +473,22 @@
 <li>IMREAD_COLOR (&gt;0) 表示把原图作为RGB图像加载进来</li>
 <li>OpenCV支持JPG、PNG、TIFF等常见格式图像文件加载</li>
 </ul>
-<h2 id="修改图像cvcvtcolor"><a class="markdownIt-Anchor" href="#修改图像cvcvtcolor"></a> 修改图像（cv::cvtColor）</h2>
-<ul>
+<h2 id="修改图像（cv-cvtColor）"><a href="#修改图像（cv-cvtColor）" class="headerlink" title="修改图像（cv::cvtColor）"></a>修改图像（cv::cvtColor）</h2><ul>
 <li>lcvtColor的功能是把图像从一个彩色空间转换到另外一个色彩空间，有三个参数，第一个参数表示源图像、第二参数表示色彩空间转换之后的图像、第三个参数表示源和目标色彩空间如：COLOR_BGR2HLS 、COLOR_BGR2GRAY 等</li>
 <li>l<a href="http://docs.opencv.org/3.1.0/d7/d1b/group__imgproc__misc.html" target="_blank" rel="noopener">cvtColor</a>( image, gray_image, <a href="http://docs.opencv.org/3.1.0/d7/d1b/group__imgproc__misc.html" target="_blank" rel="noopener">COLOR_BGR2GRAY</a> );</li>
 </ul>
-<h2 id="显示图像cvnamewindows与cvimshow"><a class="markdownIt-Anchor" href="#显示图像cvnamewindows与cvimshow"></a> 显示图像（cv::nameWindows与cv::imshow）</h2>
-<ul>
+<h2 id="显示图像（cv-nameWindows与cv-imshow）"><a href="#显示图像（cv-nameWindows与cv-imshow）" class="headerlink" title="显示图像（cv::nameWindows与cv::imshow）"></a>显示图像（cv::nameWindows与cv::imshow）</h2><ul>
 <li>namedWindos功能是创建一个OpenCV窗口，它是由OpenCV自动创建与释放，你无需取销毁它</li>
 <li>常见用法namedWindow(“Window Title”, WINDOW_AUTOSIZE)</li>
 <li>WINDOW_AUTOSIZE会自动根据图像大小，显示窗口大小，不能人为改变窗口大小</li>
 <li>WINDOW_NORMAL,跟QT集成的时候会使用，允许修改窗口大小。</li>
 <li>imshow根据窗口名称显示图像到指定的窗口上去，第一个参数是窗口名称，第二参数是Mat对象</li>
 </ul>
-<h2 id="保存图像cvimwrite"><a class="markdownIt-Anchor" href="#保存图像cvimwrite"></a> 保存图像（cv::imwrite）</h2>
-<ul>
+<h2 id="保存图像（cv-imwrite）"><a href="#保存图像（cv-imwrite）" class="headerlink" title="保存图像（cv::imwrite）"></a>保存图像（cv::imwrite）</h2><ul>
 <li>保存图像文件到指定目录路径</li>
 <li>只有8位、16位的PNG、JPG、Tiff文件格式而且是单通道或者三通道的BGR的图像才可以通过这种方式保存</li>
 <li>保存PNG格式的时候可以保存透明通道的图片</li>
-<li>可以指定压缩参数</li>
+<li>可以指定压缩参数 </li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;opencv2/opencv.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">char</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Mat src = imread(<span class="string">"1.jpg"</span>);<span class="comment">//加载原图像</span></span><br><span class="line">    <span class="comment">//Mat src = imread("1.jpg",IMREAD_GRAYSCALE);//加载灰度图像</span></span><br><span class="line">    <span class="keyword">if</span>(src.empty() )</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"could not load image...\n"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    nameWindow(<span class="string">"opencv setup demo"</span>,CV_WINDOW_AUTOSIZE);</span><br><span class="line">    imshow(<span class="string">"opencv setup demo"</span>,src);<span class="comment">//显示原图像</span></span><br><span class="line">    nameWindow(<span class="string">"output window"</span>CV_WINDOW_AUTOSIZE);</span><br><span class="line">    Mat output_image;</span><br><span class="line">    cvtColor(src,output_imsge,CV_BGR2RAY);<span class="comment">//将图像从RGB转化为灰度图像</span></span><br><span class="line">    imshow(<span class="string">"output window"</span>,output_image);<span class="comment">//显示灰度图像</span></span><br><span class="line">    </span><br><span class="line">    imwrite(<span class="string">"1.jpg"</span>,output_img);<span class="comment">//保存jpg格式图像</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -640,10 +641,7 @@
               <p class="site-description motion-element" itemprop="description">草在结它的种子，风在摇它的叶子。我们站着不说话就十分美好。</p>
           </div>
 
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
+
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=35625821&auto=0&height=66"></iframe>
 		  		  
@@ -755,7 +753,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#加载图像cvimread"><span class="nav-text"> 加载图像（cv::imread）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改图像cvcvtcolor"><span class="nav-text"> 修改图像（cv::cvtColor）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示图像cvnamewindows与cvimshow"><span class="nav-text"> 显示图像（cv::nameWindows与cv::imshow）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存图像cvimwrite"><span class="nav-text"> 保存图像（cv::imwrite）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#加载图像（cv-imread）"><span class="nav-text">加载图像（cv::imread）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改图像（cv-cvtColor）"><span class="nav-text">修改图像（cv::cvtColor）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示图像（cv-nameWindows与cv-imshow）"><span class="nav-text">显示图像（cv::nameWindows与cv::imshow）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存图像（cv-imwrite）"><span class="nav-text">保存图像（cv::imwrite）</span></a></li></ol></div>
             
 
           </div>
