@@ -25,8 +25,7 @@ const ap = new APlayer({
 		name: '咸鱼',
         artist: '五月天',
         url: 'http://music.163.com/song/media/outer/url?id=386040.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151457.jpg
-',
+        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151457.jpg',
       },
 	  {
         name: '六月的雨',
