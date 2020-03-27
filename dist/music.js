@@ -7,43 +7,43 @@ const ap = new APlayer({
         name: '勇气',
         artist: '棉子',
         url: 'http://music.163.com/song/media/outer/url?id=1411358329.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327145517.jpg',
+        cover: '/images/playImage/勇气.jpg',
 	  },
 	  {
 		name: '只爱西经',
         artist: '林一',
         url: 'http://music.163.com/song/media/outer/url?id=1401924960.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327145924.jpg',
+        cover: '/images/playImage/只爱西经.jpg',
       },
 	  {
         name: '一荤一素',
         artist: '毛不易',
         url: 'http://music.163.com/song/media/outer/url?id=569200212.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327150339.jpg',
+        cover: '/images/playImage/一荤一素.jpg',
 	  },
 	  {
 		name: '咸鱼',
         artist: '五月天',
         url: 'http://music.163.com/song/media/outer/url?id=386040.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151457.jpg',
+        cover: '/images/playImage/咸鱼.jpg',
       },
 	  {
         name: '六月的雨',
         artist: '胡歌',
         url: 'http://music.163.com/song/media/outer/url?id=4875310.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151536.jpg',
+        cover: '/images/playImage/六月的雨.jpg',
 	  },
 	  {
 		name: '邮差',
         artist: '王菲',
         url: 'http://music.163.com/song/media/outer/url?id=299460.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151817.jpg',
+        cover: '/images/playImage/邮差.jpg',
       },
 	  {
 		name: '盛夏的果实',
         artist: '莫文蔚',
         url: 'http://music.163.com/song/media/outer/url?id=277382.mp3',
-        cover: 'https://cdn.jsdelivr.net/gh/jayuee/PicgoImage/img/20200327151942.jpg',
+        cover: '/images/playImage/盛夏的果实.jpg',
       }
 
     ]
