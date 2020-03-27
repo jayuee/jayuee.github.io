@@ -302,11 +302,6 @@
     
 
 
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
-
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -461,13 +456,15 @@
       
         <p>C语言顺序结构以及逆序数的算法。</p>
 <a id="more"></a>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul>
+<h2 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量</h2>
+<ul>
 <li>其值打死也不改变的量</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRICE 20</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> a,b,sum;</span><br><span class="line">a=<span class="number">10</span>;</span><br><span class="line">b=<span class="number">20</span>;</span><br><span class="line">sum=(a+b)*PRICE;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="变量（标识符）命名规则"><a href="#变量（标识符）命名规则" class="headerlink" title="变量（标识符）命名规则"></a>变量（标识符）命名规则</h2><pre><code> * 只能由字母、数字和下划线三种字符组成，且第一个字符必须为字母或者下划线。
- * 标识符分为用户标识符和系统关键字（系统占用了，用户不能用）
-</code></pre><div class="table-container">
+<h2 id="变量标识符命名规则"><a class="markdownIt-Anchor" href="#变量标识符命名规则"></a> 变量（标识符）命名规则</h2>
+<pre><code>* 只能由字母、数字和下划线三种字符组成，且第一个字符必须为字母或者下划线。
+* 标识符分为用户标识符和系统关键字（系统占用了，用户不能用）
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -502,9 +499,8 @@
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">以下属于合法的用户标识符的是						C</span><br><span class="line"></span><br><span class="line">A <span class="number">3</span>d	B _/n	C Printf	D <span class="class"><span class="keyword">struct</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><div class="table-container">
+<h2 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h2>
 <table>
 <thead>
 <tr>
@@ -532,16 +528,17 @@
 <tr>
 <td style="text-align:center">char</td>
 <td style="text-align:center">字符型</td>
-<td style="text-align:center">‘a’,”China”</td>
+<td style="text-align:center">‘a’,“China”</td>
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h2><ul>
-<li>数据类型（类型说明符） 变量名1，变量名2，……变量名n;</li>
+<h2 id="定义变量"><a class="markdownIt-Anchor" href="#定义变量"></a> 定义变量</h2>
+<ul>
+<li>数据类型（类型说明符） 变量名1，变量名2，…变量名n;</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> a;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> b,c,d;</span><br></pre></td></tr></table></figure>
-<h2 id="变量初始化（变量赋初值）"><a href="#变量初始化（变量赋初值）" class="headerlink" title="变量初始化（变量赋初值）"></a>变量初始化（变量赋初值）</h2><ul>
+<h2 id="变量初始化变量赋初值"><a class="markdownIt-Anchor" href="#变量初始化变量赋初值"></a> 变量初始化（变量赋初值）</h2>
+<ul>
 <li>先定义变量,再初始化（赋初值）</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a,b;</span><br><span class="line">  a=<span class="number">12</span>;</span><br><span class="line">  b=<span class="number">25</span>;</span><br></pre></td></tr></table></figure>
@@ -559,26 +556,36 @@
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a,b,c;</span><br><span class="line">    a=<span class="number">5</span>;</span><br><span class="line">    b=<span class="number">5</span>;</span><br><span class="line">    c=<span class="number">5</span>;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">5</span>,b=<span class="number">5</span>,c=<span class="number">5</span>;</span><br></pre></td></tr></table></figure>
-<h2 id="内存溢出错误—注意各种数据的取值范围"><a href="#内存溢出错误—注意各种数据的取值范围" class="headerlink" title="内存溢出错误—注意各种数据的取值范围"></a>内存溢出错误—注意各种数据的取值范围</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a=<span class="number">10000000000</span>,b;</span><br><span class="line">        b=a+<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="number">10000000001</span>????</span><br></pre></td></tr></table></figure>
+<h2 id="内存溢出错误注意各种数据的取值范围"><a class="markdownIt-Anchor" href="#内存溢出错误注意各种数据的取值范围"></a> 内存溢出错误–注意各种数据的取值范围</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a=<span class="number">10000000000</span>,b;</span><br><span class="line">        b=a+<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="number">10000000001</span>????</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;					D</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">float</span> a=<span class="number">3.14</span>,b;</span><br><span class="line">    b=a+<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%f\n"</span>,b);</span><br><span class="line">&#125;</span><br><span class="line">A<span class="number">.4</span><span class="number">.14</span>   B<span class="number">.4</span><span class="number">.140</span>   C<span class="number">.3</span><span class="number">.14</span>   D<span class="number">.4</span><span class="number">.140000</span></span><br></pre></td></tr></table></figure>
-<h2 id="数制转换"><a href="#数制转换" class="headerlink" title="数制转换"></a>数制转换</h2><ol>
-<li>2,8,16—&gt;10</li>
-<li><p>10—&gt;2,8,16</p>
+<h2 id="数制转换"><a class="markdownIt-Anchor" href="#数制转换"></a> 数制转换</h2>
+<ol>
+<li>
+<p>2,8,16–&gt;10</p>
+</li>
+<li>
+<p>10–&gt;2,8,16</p>
 <ul>
 <li>整数</li>
 <li>小数</li>
 </ul>
 </li>
-<li><p>2&lt;—&gt;8&lt;—&gt;16             借助10进制</p>
+<li>
+<p>2&lt;–&gt;8&lt;–&gt;16             借助10进制</p>
 </li>
-<li>计算机里的数制：2,8,10,16进制</li>
-<li>C语言中的数制：8,10,16进制————C语言里没有2进制！！！</li>
+<li>
+<p>计算机里的数制：2,8,10,16进制</p>
+</li>
+<li>
+<p>C语言中的数制：8,10,16进制--------C语言里没有2进制！！！</p>
+</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">计算机里面的数制：</span><br><span class="line"><span class="number">1.</span> <span class="number">2</span>进制：<span class="number">0</span>,<span class="number">1</span>—Binary notation，(<span class="number">10101</span>)<span class="number">2</span>/B          </span><br><span class="line"><span class="number">2.</span> <span class="number">8</span>进制:<span class="number">0</span>,<span class="number">1</span>,…,<span class="number">7</span>---Octal notation，(<span class="number">125</span>)<span class="number">8</span>/O/Q</span><br><span class="line"><span class="number">3.</span> <span class="number">10</span>进制:<span class="number">0</span>,…,<span class="number">9</span>---Decimal notation, (<span class="number">521</span>)<span class="number">10</span>/D</span><br><span class="line"><span class="number">4.16</span>进制:<span class="number">0</span>,…,<span class="number">9</span>,A,…,F---Hexadecimal notation, (<span class="number">5F</span>A)<span class="number">16</span>/H</span><br><span class="line">数制转换：</span><br><span class="line"><span class="number">1.</span>	<span class="number">2</span>,<span class="number">8</span>,<span class="number">16</span>--&gt;<span class="number">10</span>：对应位上的数乘以<span class="number">2</span>、<span class="number">8</span>、<span class="number">16</span>的幂次方求和</span><br><span class="line"><span class="number">2.</span>	<span class="number">10</span>--&gt;<span class="number">2</span>,<span class="number">8</span>,<span class="number">16</span>  </span><br><span class="line"><span class="number">1</span>)<span class="number">.10</span>进制整数--&gt;<span class="number">2</span>,<span class="number">8</span>,<span class="number">16</span>:除<span class="number">2</span>，<span class="number">8</span>,<span class="number">16</span>取余，方向：由下往上</span><br><span class="line"><span class="number">2</span>)<span class="number">.10</span>进制小数--&gt;<span class="number">2</span>,<span class="number">8</span>,<span class="number">16</span>:乘<span class="number">2</span>,<span class="number">8</span>,<span class="number">16</span>取整，方向：由上往下 </span><br><span class="line"><span class="number">3.</span>	<span class="number">2</span> &lt;--&gt; <span class="number">8</span> &lt;--&gt; <span class="number">16</span></span><br><span class="line">…………………………</span><br><span class="line"><span class="number">210</span>=<span class="number">1024</span>        <span class="number">215</span>=<span class="number">32768</span>      <span class="number">216</span>=<span class="number">65536</span></span><br></pre></td></tr></table></figure>
-<h2 id="指数化表示浮点型数据"><a href="#指数化表示浮点型数据" class="headerlink" title="指数化表示浮点型数据"></a>指数化表示浮点型数据</h2><ul>
+<h2 id="指数化表示浮点型数据"><a class="markdownIt-Anchor" href="#指数化表示浮点型数据"></a> 指数化表示浮点型数据</h2>
+<ul>
 <li>字母e（或E）之前必须有数字，且e后面的指数必须为整数（正整数和负整数）</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -609,12 +616,11 @@
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> 以下哪一项是C语言中正确的表示形式（C D）</span><br><span class="line">A. <span class="number">0128</span>    B. <span class="number">1e1</span><span class="number">.2</span>     C. <span class="number">0101</span>（表示八进制<span class="number">101</span>）    D. <span class="number">1F</span>3（<span class="number">16</span>进制数）</span><br></pre></td></tr></table></figure>
-<h2 id="字符常量"><a href="#字符常量" class="headerlink" title="字符常量"></a>字符常量</h2><ul>
+<h2 id="字符常量"><a class="markdownIt-Anchor" href="#字符常量"></a> 字符常量</h2>
+<ul>
 <li>由单引号引起来的单个字符、字母、数字</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -624,7 +630,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">‘2’,’h’,’*’</td>
+<td style="text-align:center">‘2’,‘h’,’*’</td>
 <td style="text-align:center">T</td>
 </tr>
 <tr>
@@ -636,7 +642,7 @@
 <td style="text-align:center">T</td>
 </tr>
 <tr>
-<td style="text-align:center">‘\\\’</td>
+<td style="text-align:center">‘\’</td>
 <td style="text-align:center">T</td>
 </tr>
 <tr>
@@ -649,11 +655,10 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><ul>
+<h2 id="转义字符"><a class="markdownIt-Anchor" href="#转义字符"></a> 转义字符</h2>
+<ul>
 <li>有些以‘\’开头的特殊字符</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -667,7 +672,7 @@
 <td style="text-align:center">换行</td>
 </tr>
 <tr>
-<td style="text-align:center">\\</td>
+<td style="text-align:center">\</td>
 <td style="text-align:center">\</td>
 </tr>
 <tr>
@@ -676,24 +681,26 @@
 </tr>
 <tr>
 <td style="text-align:center">\ddd</td>
-<td style="text-align:center">ddd表示1-3位的八进制数——-单个字符 特殊：0开头，表示八进制数</td>
+<td style="text-align:center">ddd表示1-3位的八进制数-----单个字符 特殊：0开头，表示八进制数</td>
 </tr>
 <tr>
 <td style="text-align:center">\xhh</td>
-<td style="text-align:center">hh表示1-2位的16进制数———单个字符</td>
+<td style="text-align:center">hh表示1-2位的16进制数------单个字符</td>
 </tr>
 </tbody>
 </table>
-</div>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b,sum;</span><br><span class="line">	a=<span class="number">12</span>;</span><br><span class="line">	b=<span class="number">24</span>;</span><br><span class="line">	sum=a+b;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\\\n"</span>,sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="number">36</span>\</span><br><span class="line"><span class="built_in">press</span> any key to <span class="keyword">continue</span></span><br></pre></td></tr></table></figure>
-<h2 id="字符变量"><a href="#字符变量" class="headerlink" title="字符变量"></a>字符变量</h2><ul>
-<li><p>只能存放单个字符常量</p>
+<h2 id="字符变量"><a class="markdownIt-Anchor" href="#字符变量"></a> 字符变量</h2>
+<ul>
+<li>
+<p>只能存放单个字符常量</p>
 <ul>
 <li>定义：char 字符变量名1,…,字符变量名n;</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> ch;</span><br><span class="line"><span class="keyword">char</span> ch1,ch2,ch3;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>初始化</p>
+<li>
+<p>初始化</p>
 <ul>
 <li>先定义变量，再初始化（赋初值）</li>
 </ul>
@@ -705,11 +712,13 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">定义语句如下</span><br><span class="line"><span class="keyword">char</span> s1,s2,s3;</span><br><span class="line">关于初始化正确的是				D</span><br><span class="line">A s1='//'   B s2='abcd'   C s3='\t\\'   D 都不对</span><br><span class="line">注意斜杠的方向！！！</span><br><span class="line">   \\   \</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="大小写字母转换"><a href="#大小写字母转换" class="headerlink" title="大小写字母转换"></a>大小写字母转换</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">回顾： a--<span class="number">-97</span></span><br><span class="line">      A--<span class="number">-65</span></span><br><span class="line">      a=A+<span class="number">32</span></span><br></pre></td></tr></table></figure>
+<h2 id="大小写字母转换"><a class="markdownIt-Anchor" href="#大小写字母转换"></a> 大小写字母转换</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">回顾： a--<span class="number">-97</span></span><br><span class="line">      A--<span class="number">-65</span></span><br><span class="line">      a=A+<span class="number">32</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">程序：</span><br><span class="line">     <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">     <span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">     </span>&#123;</span><br><span class="line">       <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">       ch1=<span class="string">'a'</span>;</span><br><span class="line">       ch2=ch1<span class="number">-32</span>;</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">"%c\n"</span>,ch2);</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">思考：</span><br><span class="line">     <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">     <span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">     </span>&#123;</span><br><span class="line">       <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">       ch1=<span class="number">97</span>;</span><br><span class="line">       ch2=ch1<span class="number">-32</span>;</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">"%c\n"</span>,ch2);</span><br><span class="line">     &#125;</span><br><span class="line">   能否得到大写字母 A  呢？？？？</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">思考：</span><br><span class="line">     <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">     <span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">     </span>&#123;</span><br><span class="line">       <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">       ch1=<span class="string">'M'</span>;</span><br><span class="line">       ch2=ch1+<span class="string">'a'</span>-<span class="string">'A'</span>;  <span class="comment">/*等价于ch2=ch1+32*/</span></span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">"%c\n"</span>,ch2);</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a>字符串常量</h2><ul>
+<h2 id="字符串常量"><a class="markdownIt-Anchor" href="#字符串常量"></a> 字符串常量</h2>
+<ul>
 <li>由双引号引起来的字符序列</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"How are you?"</span></span><br><span class="line"><span class="string">"China"</span></span><br></pre></td></tr></table></figure>
@@ -717,55 +726,64 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> s1;</span><br><span class="line">    s1=<span class="string">'a'</span>; -----------OK</span><br><span class="line">    s1=<span class="string">"a"</span>; -----------不OK</span><br></pre></td></tr></table></figure>
 <ul>
 <li>C规定：在每一个字符串常量的末尾加一个“字符串结束标志”，以便于系统根据此标志判断字符串是否结束。</li>
-<li>‘\0’就是“字符串结束标志”（系统默认加上的）</li>
+<li>'\0’就是“字符串结束标志”（系统默认加上的）</li>
 <li>单个字符、字符串在内存中占几个字符位置??</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="string">"China"</span>----------<span class="number">-6</span>个字符    <span class="string">'\0'</span></span><br><span class="line"> <span class="string">"China\n"</span>--------<span class="number">-7</span>个字符（转义字符）</span><br><span class="line"> <span class="string">"China\\32"</span>-------（<span class="number">9</span>）个字符</span><br><span class="line"> <span class="string">"China\0hh"</span>-------（<span class="number">6</span>）个字符</span><br><span class="line"> <span class="string">"Ch\0ABC\0DE"</span>-----(<span class="number">3</span>)个字符</span><br><span class="line">注意：如果字符串出现多个<span class="string">'\0'</span>，则遇到第一个就结束了！！！！！</span><br></pre></td></tr></table></figure>
-<h2 id="混合运算"><a href="#混合运算" class="headerlink" title="混合运算"></a>混合运算</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'H'</span>-<span class="string">'t'</span>+<span class="number">3.14</span>*<span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h2 id="混合运算"><a class="markdownIt-Anchor" href="#混合运算"></a> 混合运算</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'H'</span>-<span class="string">'t'</span>+<span class="number">3.14</span>*<span class="number">5</span></span><br></pre></td></tr></table></figure>
 <ol>
-<li><p>注意优先级别</p>
+<li>
+<p>注意优先级别</p>
 </li>
-<li><p>“=”在C语言中称为赋值运算符</p>
+<li>
+<p>&quot;=&quot;在C语言中称为赋值运算符</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">3</span>;</span><br><span class="line"><span class="string">"=="</span>在C语言中才是恒等！！！！</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">12</span>;<span class="comment">/*表示将12赋值给变量a*/</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如果出现混合运算，则要以”=”左边的类型为准，强制性将右边的的类型转换为左边的类型</p>
+<li>
+<p>如果出现混合运算，则要以&quot;=&quot;左边的类型为准，强制性将右边的的类型转换为左边的类型</p>
 </li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">char</span> ch1,cha2;</span><br><span class="line"><span class="keyword">float</span> b;</span><br><span class="line">ch1=<span class="string">'H'</span>;</span><br><span class="line">ch2=<span class="string">'d'</span>;</span><br><span class="line">b=<span class="number">3.14</span>;</span><br><span class="line">a=ch1+ch2-b;</span><br></pre></td></tr></table></figure>
-<ol>
+<ol start="4">
 <li>强制类型转换打死也不遵循四舍五入！！！！！</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">float</span> b,c;</span><br><span class="line">b=<span class="number">3.56</span>;</span><br><span class="line">c=<span class="number">2.13</span>;</span><br><span class="line">a=b+c;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a);<span class="comment">/*conversion from 'float' to'int', possible loss of data*/</span></span><br><span class="line"></span><br><span class="line">A<span class="number">.5</span>     B<span class="number">.6</span>     C<span class="number">.5</span><span class="number">.69</span>     D<span class="number">.5</span><span class="number">.690000</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>如何进行强制类型转换：</p>
+<ol start="5">
+<li>
+<p>如何进行强制类型转换：</p>
 <ul>
-<li><p>（要转换的类型说明符）变量名；</p>
+<li>
+<p>（要转换的类型说明符）变量名；</p>
 </li>
-<li><p>（要转换的类型说明符）表达式；</p>
+<li>
+<p>（要转换的类型说明符）表达式；</p>
 <p>表达式：有运算符连接起来的式子</p>
 </li>
 </ul>
 </li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> a=<span class="number">3.798651</span>,b=<span class="number">6.856342</span>;</span><br><span class="line"><span class="keyword">int</span> c;</span><br><span class="line">c=(<span class="keyword">int</span>)a;  -----------<span class="number">-3</span></span><br><span class="line">c=(<span class="keyword">int</span>)b;  -----------<span class="number">-6</span></span><br><span class="line">c=(<span class="keyword">int</span>)(a+b);----------<span class="number">-10</span></span><br><span class="line">c=(<span class="keyword">int</span>)a+(<span class="keyword">int</span>)b;-------<span class="number">-9</span></span><br></pre></td></tr></table></figure>
-<h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+  -  *  /  %  ++  --</span><br></pre></td></tr></table></figure>
+<h2 id="算数运算符"><a class="markdownIt-Anchor" href="#算数运算符"></a> 算数运算符</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+  -  *  /  %  ++  --</span><br></pre></td></tr></table></figure>
 <ol>
 <li>/:除法运算，取整运算符(n&lt;m且m!=0,n/m==0)</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">31</span>/<span class="number">2</span>==<span class="number">15</span>   <span class="number">1</span>/<span class="number">2</span>==<span class="number">0</span>    <span class="number">2</span>/<span class="number">7</span>==<span class="number">0</span>    <span class="number">9</span>/<span class="number">2</span>==<span class="number">4</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>%：模运算符—求余运算符(%运算符两边的运算数必须为整数类型）</li>
+<ol start="2">
+<li>%：模运算符–求余运算符(%运算符两边的运算数必须为整数类型）</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">31</span>%<span class="number">2</span>==<span class="number">1</span>    <span class="number">5</span>%<span class="number">3</span>==<span class="number">2</span></span><br><span class="line"><span class="number">3.14</span>%<span class="number">2</span>----不OK</span><br><span class="line">(<span class="keyword">int</span>)<span class="number">3.14</span>%<span class="number">2</span>----OK</span><br><span class="line">注意：</span><br><span class="line">      <span class="number">1</span>/<span class="number">2</span>==<span class="number">0</span>         除法运算      </span><br><span class="line">      <span class="number">1.0</span>/<span class="number">2</span>==<span class="number">0.5</span>     混合运算</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>自增、自减运算符：++  —</p>
+<ol start="3">
+<li>
+<p>自增、自减运算符：++  –</p>
 <ul>
 <li>自增自减运算符只能用于变量，不能用于常量和表达式！！！！</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i++;-----OK</span><br><span class="line">--j;-----OK</span><br><span class="line"><span class="number">5</span>++;-----不OK</span><br><span class="line">（i+j）++;-------不OK</span><br></pre></td></tr></table></figure>
 <ul>
-<li>i++(i—):先使用i的值，然后再给i加1（下一次再使用i的值加1）</li>
+<li>i++(i–):先使用i的值，然后再给i加1（下一次再使用i的值加1）</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i,j;</span><br><span class="line">i=<span class="number">3</span>;</span><br><span class="line">j=i++;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,i,j);</span><br><span class="line">			 <span class="number">4</span>,<span class="number">3</span>                </span><br><span class="line"> ++i(--i):先给i加<span class="number">1</span>，再使用i的值</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i,j;</span><br><span class="line">i=<span class="number">3</span>;</span><br><span class="line">j=++i;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,i,j);</span><br><span class="line">				  <span class="number">4</span>,<span class="number">4</span></span><br></pre></td></tr></table></figure>
@@ -775,69 +793,92 @@
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i,j,m;</span><br><span class="line">i=<span class="number">3</span>;</span><br><span class="line">j=<span class="number">5</span>;</span><br><span class="line">m=i+++j;<span class="comment">/*m=(i++)+j   m=i+(++j)*/</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d,%d\n"</span>,i,j,m);</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>自增自减运算结合方向：比较奇葩—-自右至左！前一个会影响下一个的值！！</p>
+<li>
+<p>自增自减运算结合方向：比较奇葩—自右至左！前一个会影响下一个的值！！</p>
 </li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">5</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d,%d,%d,%d\n"</span>,++i,i++,i--,--i);</span><br><span class="line">                         <span class="number">5</span>   <span class="number">3</span>   <span class="number">4</span>   <span class="number">4</span>                           </span><br><span class="line">A<span class="number">.6</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">5</span>    B<span class="number">.5</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>    C<span class="number">.6</span>,<span class="number">6</span>,<span class="number">4</span>,<span class="number">5</span>    D<span class="number">.5</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span></span><br></pre></td></tr></table></figure>
-<h2 id="复合的赋值运算符"><a href="#复合的赋值运算符" class="headerlink" title="复合的赋值运算符"></a>复合的赋值运算符</h2><ul>
-<li><p>在赋值运算符”=”之前加上其他运算符，构成了复合的运算符</p>
+<h2 id="复合的赋值运算符"><a class="markdownIt-Anchor" href="#复合的赋值运算符"></a> 复合的赋值运算符</h2>
+<ul>
+<li>
+<p>在赋值运算符&quot;=&quot;之前加上其他运算符，构成了复合的运算符</p>
 </li>
-<li><p>复合表达式：复合运算符连接起来的式子</p>
+<li>
+<p>复合表达式：复合运算符连接起来的式子</p>
 </li>
-<li><p>复合语句：复合表达式;</p>
+<li>
+<p>复合语句：复合表达式;</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a+=<span class="number">5</span>;     等价于：a=a+<span class="number">5</span>;</span><br><span class="line">i-=<span class="number">8</span>;     等价于：i=i<span class="number">-8</span>；</span><br><span class="line">j/=t<span class="number">-6</span>;   等价于：j=j/t<span class="number">-6</span> ; ----不OK</span><br><span class="line">j=j/(t<span class="number">-6</span>);----OK</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="赋值表达式"><a href="#赋值表达式" class="headerlink" title="赋值表达式"></a>赋值表达式</h2><ul>
-<li>由”=”连接起来式子</li>
+<h2 id="赋值表达式"><a class="markdownIt-Anchor" href="#赋值表达式"></a> 赋值表达式</h2>
+<ul>
+<li>由&quot;=&quot;连接起来式子</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">5</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>赋值语句：赋值表达式后面加一个分号</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">int</span> a,b;</span><br><span class="line"> a=(b=<span class="number">5</span>);</span><br><span class="line"> <span class="built_in">printf</span>(<span class="string">"%d,%d\n"</span>,a,b);</span><br><span class="line"> <span class="number">5</span> <span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> a,b,c;</span><br><span class="line">a=(b=<span class="number">5</span>)=(c=<span class="number">5</span>);----不OK</span><br></pre></td></tr></table></figure>
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">12</span>,则a+=a-=a*a的值是（）</span><br><span class="line">解析：a+=a-=a*a</span><br><span class="line">第一步：a+=A</span><br><span class="line">第二步：a=a+A</span><br><span class="line">第三步：a=a+(a-=a*a)</span><br><span class="line">第四步：a=a+(a=a-a*a)</span><br><span class="line">         =<span class="number">12</span>+(<span class="number">12</span><span class="number">-12</span>*<span class="number">12</span>)</span><br><span class="line">         =<span class="number">12</span><span class="number">-132</span></span><br><span class="line">         =<span class="number">-120</span>------不OK</span><br><span class="line">第四步：a=a+(a=a-a*a)</span><br><span class="line">         =a+(a=<span class="number">12</span><span class="number">-12</span>*<span class="number">12</span>)-----a是变量  a=<span class="number">-132</span></span><br><span class="line">         =<span class="number">-132</span><span class="number">-132</span></span><br><span class="line">         =<span class="number">-264</span>------OK</span><br><span class="line"></span><br><span class="line">A.<span class="number">-120</span>    B.<span class="number">-264</span>   C<span class="number">.0</span>    D<span class="number">.138</span></span><br></pre></td></tr></table></figure>
-<h2 id="逗号表达式"><a href="#逗号表达式" class="headerlink" title="逗号表达式"></a>逗号表达式</h2><ul>
-<li><p>表达式1,表达式2,…,表达式n</p>
+<h2 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h2>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">12</span>,则a+=a-=a*a的值是（）</span><br><span class="line">解析：a+=a-=a*a</span><br><span class="line">第一步：a+=A</span><br><span class="line">第二步：a=a+A</span><br><span class="line">第三步：a=a+(a-=a*a)</span><br><span class="line">第四步：a=a+(a=a-a*a)</span><br><span class="line">         =<span class="number">12</span>+(<span class="number">12</span><span class="number">-12</span>*<span class="number">12</span>)</span><br><span class="line">         =<span class="number">12</span><span class="number">-132</span></span><br><span class="line">         =<span class="number">-120</span>------不OK</span><br><span class="line">第四步：a=a+(a=a-a*a)</span><br><span class="line">         =a+(a=<span class="number">12</span><span class="number">-12</span>*<span class="number">12</span>)-----a是变量  a=<span class="number">-132</span></span><br><span class="line">         =<span class="number">-132</span><span class="number">-132</span></span><br><span class="line">         =<span class="number">-264</span>------OK</span><br><span class="line"></span><br><span class="line">A.<span class="number">-120</span>    B.<span class="number">-264</span>   C<span class="number">.0</span>    D<span class="number">.138</span></span><br></pre></td></tr></table></figure>
+<h2 id="逗号表达式"><a class="markdownIt-Anchor" href="#逗号表达式"></a> 逗号表达式</h2>
+<ul>
+<li>
+<p>表达式1,表达式2,…,表达式n</p>
 </li>
-<li><p>结合方向：自左至右</p>
+<li>
+<p>结合方向：自左至右</p>
 </li>
-<li><p>整个逗号表达式的值是最右边那个表达式的值</p>
+<li>
+<p>整个逗号表达式的值是最右边那个表达式的值</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span>+<span class="number">5</span>,<span class="number">6</span><span class="number">-9</span>,<span class="number">3</span>+<span class="number">10</span>,<span class="number">6</span><span class="number">-2</span>  ----------<span class="number">-4</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>逗号表达式的优先级别—-贼低！！！最低！！！</p>
+<li>
+<p>逗号表达式的优先级别—贼低！！！最低！！！</p>
 </li>
-<li><p>思考—-逗号表达式中间有没有变量！！!</p>
+<li>
+<p>思考—逗号表达式中间有没有变量！！!</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i,j,n,m;</span><br><span class="line">i=<span class="number">5</span>;</span><br><span class="line">j=<span class="number">6</span>;</span><br><span class="line">m=(<span class="number">3</span>+<span class="number">5</span>,i++,j++,n=++i,i+j);</span><br><span class="line"><span class="number">8</span> ，<span class="number">5</span> ，<span class="number">6</span>, ， <span class="number">7</span> ， <span class="number">14</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>,m);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="putchar函数"><a href="#putchar函数" class="headerlink" title="putchar函数"></a>putchar函数</h2><ul>
-<li><p>一次输出一个字符</p>
+<h2 id="putchar函数"><a class="markdownIt-Anchor" href="#putchar函数"></a> putchar函数</h2>
+<ul>
+<li>
+<p>一次输出一个字符</p>
 </li>
-<li><p>语法：putchar(变量名或者单个字符常量);</p>
+<li>
+<p>语法：putchar(变量名或者单个字符常量);</p>
 </li>
-<li><p>注意：如果是字符常量，一定要用单引号引起来</p>
+<li>
+<p>注意：如果是字符常量，一定要用单引号引起来</p>
 </li>
-<li><p>一次只能输出一个字符！！！</p>
+<li>
+<p>一次只能输出一个字符！！！</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">  ch1=<span class="string">'H'</span>;</span><br><span class="line">  ch2=<span class="string">'m'</span>;</span><br><span class="line">  <span class="built_in">putchar</span>(ch1);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">  <span class="built_in">putchar</span>(ch2);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="getchar函数"><a href="#getchar函数" class="headerlink" title="getchar函数"></a>getchar函数</h2><ul>
-<li><p>一次输入单个字符</p>
+<h2 id="getchar函数"><a class="markdownIt-Anchor" href="#getchar函数"></a> getchar函数</h2>
+<ul>
+<li>
+<p>一次输入单个字符</p>
 </li>
-<li><p>语法： 变量名= getchar();</p>
+<li>
+<p>语法： 变量名= getchar();</p>
 </li>
-<li><p>注意：getchar后面的括号里面啥东东都不要写！！！</p>
+<li>
+<p>注意：getchar后面的括号里面啥东东都不要写！！！</p>
 </li>
-<li><p>一次只能输入一个字符！！！</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">  ch1=getchar();</span><br><span class="line">  ch2=getchar();</span><br><span class="line">  <span class="built_in">putchar</span>(ch1);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">  <span class="built_in">putchar</span>(ch2);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>
+<p>一次只能输入一个字符！！！</p>
 </li>
 </ul>
-<h2 id="printf函数"><a href="#printf函数" class="headerlink" title="printf函数"></a>printf函数</h2><ul>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">char</span> ch1,ch2;</span><br><span class="line">  ch1=getchar();</span><br><span class="line">  ch2=getchar();</span><br><span class="line">  <span class="built_in">putchar</span>(ch1);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">  <span class="built_in">putchar</span>(ch2);</span><br><span class="line">  <span class="built_in">putchar</span>(<span class="string">'\n'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="printf函数"><a class="markdownIt-Anchor" href="#printf函数"></a> printf函数</h2>
+<ul>
 <li>语法：printf(“格式控制”,输出列表);</li>
-<li>printf(“%d,%c,%f,%o,%x,%s”,输出列表);</li>
+<li>printf(&quot;%d,%c,%f,%o,%x,%s&quot;,输出列表);</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -872,11 +913,15 @@
 </tr>
 </tbody>
 </table>
-</div>
 <ol>
-<li>格式控制都是小写字母</li>
-<li>格式控制与后面的输出列表变量一一对应</li>
-<li><p>printf(“%md”,a)</p>
+<li>
+<p>格式控制都是小写字母</p>
+</li>
+<li>
+<p>格式控制与后面的输出列表变量一一对应</p>
+</li>
+<li>
+<p>printf(&quot;%md&quot;,a)</p>
 <ul>
 <li>m是整数</li>
 <li>m是指输出的结果占几列宽度</li>
@@ -885,88 +930,102 @@
 <li>如果m的绝对值小于原来数的宽度，则原样输出</li>
 </ul>
 </li>
-<li><p>printf(“%m.nf”,a);</p>
+<li>
+<p>printf(&quot;%<a href="http://m.nf" target="_blank" rel="noopener">m.nf</a>&quot;,a);</p>
 <ul>
-<li><p>m是指输出的结果占几列宽度,n是指小数点后保留几位有效数字</p>
+<li>
+<p>m是指输出的结果占几列宽度,n是指小数点后保留几位有效数字</p>
 </li>
-<li><p>m是正整数的话，输出结果差几列左补几个空格；     </p>
+<li>
+<p>m是正整数的话，输出结果差几列左补几个空格；</p>
 </li>
-<li><p>m是负整数的话，输出结果差几列右补几个空格；</p>
+<li>
+<p>m是负整数的话，输出结果差几列右补几个空格；</p>
 </li>
-<li><p>printf(“%2.5f”,a)；</p>
-<p> m&lt;n:先满足n，在考虑m，m能满足就满足，满足不了—-不搭理！！！</p>
+<li>
+<p>printf(&quot;%2.5f&quot;,a)；</p>
+<p>m&lt;n:先满足n，在考虑m，m能满足就满足，满足不了—不搭理！！！</p>
 </li>
 </ul>
 <ul>
-<li>m 宽度控制—输出占几列宽度，n 精度控制—小数点后保留几位有效数字</li>
+<li>m 宽度控制–输出占几列宽度，n 精度控制–小数点后保留几位有效数字</li>
 <li>遵循四舍五入</li>
-<li>printf(“%.nf”,a);   直接不管输出几列宽度，只需要考虑精度n</li>
+<li>printf(&quot;%.nf&quot;,a);   直接不管输出几列宽度，只需要考虑精度n</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">int</span> a=<span class="number">5</span>,b=<span class="number">6</span>;</span><br><span class="line"> <span class="keyword">float</span> c=<span class="number">3.14</span>;</span><br><span class="line"> <span class="built_in">printf</span>(<span class="string">"%d,%d,%f\n"</span>,a,b,c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>printf(“%m.ns”,”China”);</p>
+<li>
+<p>printf(&quot;%m.ns&quot;,“China”);</p>
 <ul>
 <li>m是指输出的结果占几列宽度</li>
 <li>m是正整数的话，输出结果差几列左补几个空格</li>
 <li>m是负整数的话，输出结果差几列右补几个空格</li>
 <li>n指的是从字符串左边起数n个字符输出</li>
 <li>如果m的绝对值小于原来数的宽度，则原样输出</li>
-<li>m&lt;n:先满足n，在考虑m，m能满足就满足，满足不了—-不搭理！！</li>
-<li>printf(“%.ns”,”China”);   直接从字符串左端数n个字符输出即可</li>
+<li>m&lt;n:先满足n，在考虑m，m能满足就满足，满足不了—不搭理！！</li>
+<li>printf(&quot;%.ns&quot;,“China”);   直接从字符串左端数n个字符输出即可</li>
 <li>如果n大于字符串原本宽度，则字符串原样输出</li>
-<li>printf(“%ms”,”China”);<ul>
+<li>printf(&quot;%ms&quot;,“China”);
+<ul>
 <li>m是指输出的结果占几列宽度</li>
 <li>m大于原来字符串的宽度</li>
 <li>m是正整数的话，输出结果差几列左补几个空格</li>
 <li>m是负整数的话，输出结果差几列右补几个空格</li>
-<li>m小于原来字符串宽度：——-原样输出！！！</li>
+<li>m小于原来字符串宽度：-----原样输出！！！</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>printf(“%mc”,a)<ul>
+<li>
+<p>printf(&quot;%mc&quot;,a)</p>
+<ul>
 <li>m是指输出的结果占几列宽度</li>
 <li>m大于原来字符的宽度</li>
 <li>m是正整数的话，输出结果差几列左补几个空格</li>
 <li>m是负整数的话，输出结果差几列右补几个空格</li>
 </ul>
 </li>
-<li>C语言中木有二进制</li>
+<li>
+<p>C语言中木有二进制</p>
+</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">数制转换</span><br><span class="line">   <span class="keyword">int</span> a=<span class="number">8</span>,b=<span class="number">010</span>;</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"%o,%d\n"</span>,a,b);</span><br></pre></td></tr></table></figure>
-<ol>
-<li>注意格式控制中有木有分隔符（逗号、空格、下划线、转义字符、木有）<pre><code> 因为输出的结果与格式控制中的分隔符一一对应！！！！
-</code></pre></li>
+<ol start="8">
+<li>注意格式控制中有木有分隔符（逗号、空格、下划线、转义字符、木有）<br />
+因为输出的结果与格式控制中的分隔符一一对应！！！！</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">12</span>,b=<span class="number">20</span>,c=<span class="number">30</span>,d=<span class="number">50</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d%d%d%d\n"</span>,a,b,c,d);</span><br><span class="line">A<span class="number">.12203050</span>    B<span class="number">.12</span> <span class="number">20</span> <span class="number">30</span> <span class="number">50</span>     C<span class="number">.12</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">50</span>     D<span class="number">.12</span>_20_30_50</span><br></pre></td></tr></table></figure>
-<ol>
+<ol start="9">
 <li>printf(“你是大人才！\n不许瞌睡！！\n”);</li>
 </ol>
-<p>printf输出的内容：除了转义字符和格式控制之外的任何东东—普通字符<br>                      原样输出！！！！</p>
-<h2 id="scanf"><a href="#scanf" class="headerlink" title="scanf"></a>scanf</h2><ul>
+<p>printf输出的内容：除了转义字符和格式控制之外的任何东东–普通字符<br />
+原样输出！！！！</p>
+<h2 id="scanf"><a class="markdownIt-Anchor" href="#scanf"></a> scanf</h2>
+<ul>
 <li>标准的输入函数</li>
 </ul>
 <ol>
 <li>一次性输入多个不同类型的变量值</li>
-<li>scanf(“格式控制”,输入列表);<pre><code> scanf(&quot;%d,%f,%c&quot;,&amp;a,&amp;b,&amp;c);
-</code></pre></li>
+<li>scanf(“格式控制”,输入列表);<br />
+scanf(&quot;%d,%f,%c&quot;,&amp;a,&amp;b,&amp;c);</li>
 <li>&amp; 称为取地址运算符</li>
 <li>scanf中格式控制木有宽度、精度控制！！！！！</li>
 <li>注意格式控制里面的分隔符，因为输入的时候要与之对应！！！！</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> a,b,c;</span><br><span class="line">   <span class="built_in">scanf</span>(<span class="string">"%d,%d,%d"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"%d %d %d\n"</span>,a,b,c);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
+<ol start="6">
 <li>如果格式控制中间木有分隔符，输入数据的时候用：enter、空格、tab可以隔开，但是逗号、分号不能乱用！</li>
 <li>格式控制不建议用转义字符</li>
 <li>使用scanf按照%s格式输入字符串的时候，可以不加取地址运算符&amp;，加上也没错</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> ch1[<span class="number">5</span>];</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%s"</span>,ch1);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%s\n"</span>,ch1);</span><br></pre></td></tr></table></figure>
-<h2 id="顺序结构编写程序的万能公式"><a href="#顺序结构编写程序的万能公式" class="headerlink" title="顺序结构编写程序的万能公式"></a>顺序结构编写程序的万能公式</h2><ol>
+<h2 id="顺序结构编写程序的万能公式"><a class="markdownIt-Anchor" href="#顺序结构编写程序的万能公式"></a> 顺序结构编写程序的万能公式</h2>
+<ol>
 <li>考虑定以几个变量</li>
-<li>变量定义成啥类型：int float char </li>
-<li>变量初始化——scanf</li>
+<li>变量定义成啥类型：int float char</li>
+<li>变量初始化----scanf</li>
 <li>摆公式</li>
-<li>输出—-printf</li>
+<li>输出—printf</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">已知矩形的两条边，编写程序求矩形的面积。s=a*b</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">float</span> a,b;</span><br><span class="line">  <span class="keyword">double</span> s;</span><br><span class="line">  a=<span class="number">3.121345</span>;</span><br><span class="line">  b=<span class="number">5.217676</span>;</span><br><span class="line">  s=a*b;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%f\n"</span>,s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -975,7 +1034,8 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">float</span> a,b;</span><br><span class="line">  <span class="keyword">double</span> s;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"请输入矩形的两条边:\n"</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%f,%f"</span>,&amp;a,&amp;b);</span><br><span class="line">  s=a*b;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%5.2f\n"</span>,s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//已知任意三角形的三条边，编写程序求三角形的面积。</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">海伦公式：</span></span><br><span class="line"><span class="comment">a,b,c</span></span><br><span class="line"><span class="comment">s=1.0/2*(a+b+c)</span></span><br><span class="line"><span class="comment">area=根号下(s*(s-a)*(s-b)*(s-c))</span></span><br><span class="line"><span class="comment">area=sqrt(s*(s-a)*(s-b)*(s-c))</span></span><br><span class="line"><span class="comment">sqrt--- 求平方根函数</span></span><br><span class="line"><span class="comment">*/</span>    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">float</span> a,b,c;</span><br><span class="line">  <span class="keyword">double</span> s,area;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"请输入三角形的三条边:\n"</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%f,%f,%f"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line">  s=<span class="number">1.0</span>/<span class="number">2</span>*(a+b+c);</span><br><span class="line">  area=<span class="built_in">sqrt</span>(s*(s-a)*(s-b)*(s-c));</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%5.2f\n"</span>,area);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//已知一元二次方程的三个系数，求一元二次方程根！！！</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">a*x*x+b*x+c=0</span></span><br><span class="line"><span class="comment">x1=(-b+根号下（b的平方-4ac）)/2a</span></span><br><span class="line"><span class="comment">x2=(-b-根号下（b的平方-4ac）)/2a</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">float</span> a,b,c;</span><br><span class="line">  <span class="keyword">double</span> x1,x2;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"请一元二次方程的三个系数:\n"</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%f,%f,%f"</span>,&amp;a,&amp;b,&amp;c);</span><br><span class="line"></span><br><span class="line">  x1=(-b+<span class="built_in">sqrt</span>(b*b<span class="number">-4</span>*a*c))/(<span class="number">2</span>*a);</span><br><span class="line">  x2=(-b-<span class="built_in">sqrt</span>(b*b<span class="number">-4</span>*a*c))/(<span class="number">2</span>*a);</span><br><span class="line"> </span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%5.2f,%5.2f\n"</span>,x1,x2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">d=b*b-4*a*c</span></span><br><span class="line"><span class="comment">d&gt;0 两个不等实根</span></span><br><span class="line"><span class="comment">d=0 两个相等实根</span></span><br><span class="line"><span class="comment">d&lt;0 一对共轭虚根  x1=a+bi    x2=a-bi</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h2 id="求解逆序数"><a href="#求解逆序数" class="headerlink" title="求解逆序数"></a>求解逆序数</h2><p><a href="https://blog.csdn.net/newer_no1/article/details/78626683" target="_blank" rel="noopener">逆序数教程 </a></p>
+<h2 id="求解逆序数"><a class="markdownIt-Anchor" href="#求解逆序数"></a> 求解逆序数</h2>
+<p><a href="https://blog.csdn.net/newer_no1/article/details/78626683" target="_blank" rel="noopener">逆序数教程 </a></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//已知任意一个三位正整数，求它的反相数。</span></span><br><span class="line"><span class="comment">//思考：四位？五位？。。。n位？</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">345---&gt;543      875---&gt;578</span></span><br><span class="line"><span class="comment">分析：</span></span><br><span class="line"><span class="comment">      第一步：</span></span><br><span class="line"><span class="comment">           875=8*100+7*10+5</span></span><br><span class="line"><span class="comment">           578=5*100+7*10+8</span></span><br><span class="line"><span class="comment">      第二步：/ 取整  % 求余</span></span><br><span class="line"><span class="comment">           8=875/100</span></span><br><span class="line"><span class="comment">           7=(875-8*100)/10</span></span><br><span class="line"><span class="comment">           5=875%10</span></span><br><span class="line"><span class="comment">      第三步：反相数=5*100+7*10+8</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m,b,s,g,n;<span class="comment">/*m原三位正整数，b百位数，s十位数，g个位数，n是m的反相数*/</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入任意一个三位正整数：\n"</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;m);</span><br><span class="line"></span><br><span class="line">    b=m/<span class="number">100</span>;<span class="comment">/*分解百位数*/</span></span><br><span class="line">    s=(m-b*<span class="number">100</span>)/<span class="number">10</span>;<span class="comment">/*分解十位数*/</span></span><br><span class="line">    g=m%<span class="number">10</span>;<span class="comment">/*分解个位数*/</span></span><br><span class="line"></span><br><span class="line">    n=g*<span class="number">100</span>+s*<span class="number">10</span>+b;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d的反相数是%d\n"</span>,m,n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//求解10位数以内</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>,m=<span class="number">0</span>,n=<span class="number">0</span>,x=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;x);</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">        m=x%<span class="number">10</span>;<span class="comment">//得到个位数 </span></span><br><span class="line">        n=x/<span class="number">10</span>;<span class="comment">//去掉个位后剩下的数 </span></span><br><span class="line">        x=n;</span><br><span class="line">        i=i*<span class="number">10</span>+m;</span><br><span class="line">	   &#125;<span class="keyword">while</span>(x!=<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输入球的半径r，计算并输出球的体积。</span></span><br><span class="line"><span class="comment">//v=4*PI*r*r*r/3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PI 3.14  <span class="comment">/*定义PI，它的值一生一世都是3.14*/</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">float</span> r;</span><br><span class="line">   <span class="keyword">double</span> v;</span><br><span class="line">   </span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"请输入球体的半径：\n"</span>);</span><br><span class="line">   <span class="built_in">scanf</span>(<span class="string">"%f"</span>,&amp;r);</span><br><span class="line"></span><br><span class="line">   v=<span class="number">4</span>*PI*r*r*r/<span class="number">3</span>;</span><br><span class="line"></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"%5.2f\n"</span>,v);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1129,7 +1189,10 @@
               <p class="site-description motion-element" itemprop="description">草在结它的种子，风在摇它的叶子。我们站着不说话就十分美好。</p>
           </div>
 
-
+		<link rel="stylesheet" href="/dist/APlayer.min.css">
+		<div id="aplayer"></div>
+		<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+		<script type="text/javascript" src="/dist/music.js"></script>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=35625821&auto=0&height=66"></iframe>
 		  		  
@@ -1241,7 +1304,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-text">变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量（标识符）命名规则"><span class="nav-text">变量（标识符）命名规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义变量"><span class="nav-text">定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量初始化（变量赋初值）"><span class="nav-text">变量初始化（变量赋初值）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内存溢出错误—注意各种数据的取值范围"><span class="nav-text">内存溢出错误—注意各种数据的取值范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数制转换"><span class="nav-text">数制转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数化表示浮点型数据"><span class="nav-text">指数化表示浮点型数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符常量"><span class="nav-text">字符常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义字符"><span class="nav-text">转义字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符变量"><span class="nav-text">字符变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大小写字母转换"><span class="nav-text">大小写字母转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常量"><span class="nav-text">字符串常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混合运算"><span class="nav-text">混合运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算数运算符"><span class="nav-text">算数运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复合的赋值运算符"><span class="nav-text">复合的赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值表达式"><span class="nav-text">赋值表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-text">应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逗号表达式"><span class="nav-text">逗号表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#putchar函数"><span class="nav-text">putchar函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getchar函数"><span class="nav-text">getchar函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#printf函数"><span class="nav-text">printf函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scanf"><span class="nav-text">scanf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序结构编写程序的万能公式"><span class="nav-text">顺序结构编写程序的万能公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求解逆序数"><span class="nav-text">求解逆序数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-text"> 变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量标识符命名规则"><span class="nav-text"> 变量（标识符）命名规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-text"> 数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义变量"><span class="nav-text"> 定义变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量初始化变量赋初值"><span class="nav-text"> 变量初始化（变量赋初值）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内存溢出错误注意各种数据的取值范围"><span class="nav-text"> 内存溢出错误–注意各种数据的取值范围</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数制转换"><span class="nav-text"> 数制转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数化表示浮点型数据"><span class="nav-text"> 指数化表示浮点型数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符常量"><span class="nav-text"> 字符常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转义字符"><span class="nav-text"> 转义字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符变量"><span class="nav-text"> 字符变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大小写字母转换"><span class="nav-text"> 大小写字母转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串常量"><span class="nav-text"> 字符串常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混合运算"><span class="nav-text"> 混合运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算数运算符"><span class="nav-text"> 算数运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复合的赋值运算符"><span class="nav-text"> 复合的赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值表达式"><span class="nav-text"> 赋值表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-text"> 应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逗号表达式"><span class="nav-text"> 逗号表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#putchar函数"><span class="nav-text"> putchar函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getchar函数"><span class="nav-text"> getchar函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#printf函数"><span class="nav-text"> printf函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scanf"><span class="nav-text"> scanf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序结构编写程序的万能公式"><span class="nav-text"> 顺序结构编写程序的万能公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求解逆序数"><span class="nav-text"> 求解逆序数</span></a></li></ol></div>
             
 
           </div>
@@ -1846,12 +1909,7 @@
   
 
   
-  <script type="text/javascript" src="/js/src/exturl.js?v=6.0.4"></script>
-
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.0.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
 </script>
@@ -1868,7 +1926,12 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body>
+<!-- hexo-inject:end -->
+
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
