@@ -462,39 +462,34 @@
       
         <p>配置VS2019+OpenCV遇到的问题</p>
 <a id="more"></a>
-<h2 id="下载个vs2017"><a class="markdownIt-Anchor" href="#下载个vs2017"></a> 下载个VS2017</h2>
-<p>曾经在一个博主那里看到过，尝试过一次，安装vs2017之后，发现vs2019的Microsoft.Cpp.x64.user又出现了。猜测安装的vs2019没有Microsoft.Cpp.x64.user的原因是因为装在D盘的原因（纯属个人观点）。</p>
-<h2 id="配置属性表建议"><a class="markdownIt-Anchor" href="#配置属性表建议"></a> 配置属性表（建议）</h2>
-<ol>
-<li>
-<p>在视图中找到资源管理器，并打开</p>
+<h2 id="下载个VS2017"><a href="#下载个VS2017" class="headerlink" title="下载个VS2017"></a>下载个VS2017</h2><p>曾经在一个博主那里看到过，尝试过一次，安装vs2017之后，发现vs2019的Microsoft.Cpp.x64.user又出现了。猜测安装的vs2019没有Microsoft.Cpp.x64.user的原因是因为装在D盘的原因（纯属个人观点）。</p>
+<h2 id="配置属性表（建议）"><a href="#配置属性表（建议）" class="headerlink" title="配置属性表（建议）"></a>配置属性表（建议）</h2><ol>
+<li><p>在视图中找到资源管理器，并打开</p>
 </li>
-<li>
-<p>右键Debug|x64</p>
+<li><p>右键Debug|x64</p>
 </li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/20200318151342568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<ol start="3">
+<p><img src="https://img-blog.csdnimg.cn/20200318151342568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
 <li>点击添加新项目属性表，名称可以自定义（我填的是opencv4.props）然后点添加后关闭此页面。一定要记住opencv4.props保存的位置，后面会用到。</li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/20200318151516716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-4. 此时你会发现你的属性管理器多了一个opencv4.props，左键双击配置属性，如果对opencv配置不熟悉，可以参考我的上一篇博文<a href="https://blog.csdn.net/Jayuee/article/details/97312294" target="_blank" rel="noopener">VS2019配置OpenCV4.1.0详细教程与测试代码</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20200318151554613.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
-<ol start="5">
-<li>
-<p>配置结束后记得点击保存</p>
-</li>
-<li>
-<p>当你下次再新建项目是可能你会发现你之前配置的属性又找不到了，又需要重新配置环境，为了解决这种问题，你需要找到刚才你保存的属性页的位置（即opencv4.props）将它复制保存出来。</p>
-</li>
-<li>
-<p>当你又一次新建项目时，通过视图打开属性管理器，右键Debug|x64,点击添加现有属性表，找到你刚才复制出来的opencv4.props，点击打开</p>
-</li>
+<p><img src="https://img-blog.csdnimg.cn/20200318151516716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li>此时你会发现你的属性管理器多了一个opencv4.props，左键双击配置属性，如果对opencv配置不熟悉，可以参考我的上一篇博文<a href="https://blog.csdn.net/Jayuee/article/details/97312294" target="_blank" rel="noopener">VS2019配置OpenCV4.1.0详细教程与测试代码</a></li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/20200318151613474.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-6rLIm8Ok-1584515583532)(C:\Users\ThinkPad\Desktop\QQ截图20200318144146.png)]" /><br />
-<img src="https://img-blog.csdnimg.cn/20200318151639227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /><br />
-8. 此时你会发现你的属性管理器多了个opencv4，此时你的opencv环境就又可以用了</p>
-<p><em><strong>记得把配置好的opencv4.props文件保管好，否则又需要重新配置了</strong></em></p>
+<p><img src="https://img-blog.csdnimg.cn/20200318151554613.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li><p>配置结束后记得点击保存</p>
+</li>
+<li><p>当你下次再新建项目是可能你会发现你之前配置的属性又找不到了，又需要重新配置环境，为了解决这种问题，你需要找到刚才你保存的属性页的位置（即opencv4.props）将它复制保存出来。</p>
+</li>
+<li>当你又一次新建项目时，通过视图打开属性管理器，右键Debug|x64,点击添加现有属性表，找到你刚才复制出来的opencv4.props，点击打开</li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/20200318151613474.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-6rLIm8Ok-1584515583532)(C:\Users\ThinkPad\Desktop\QQ截图20200318144146.png)\]"><br><img src="https://img-blog.csdnimg.cn/20200318151639227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXVlZQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li>此时你会发现你的属性管理器多了个opencv4，此时你的opencv环境就又可以用了</li>
+</ol>
+<p><strong><em>记得把配置好的opencv4.props文件保管好，否则又需要重新配置了</em></strong></p>
 
       
     </div>
@@ -760,7 +755,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载个vs2017"><span class="nav-text"> 下载个VS2017</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置属性表建议"><span class="nav-text"> 配置属性表（建议）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载个VS2017"><span class="nav-text">下载个VS2017</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置属性表（建议）"><span class="nav-text">配置属性表（建议）</span></a></li></ol></div>
             
 
           </div>
