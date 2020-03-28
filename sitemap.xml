@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jayuee.com/2020/03/27/hexo/</loc>
+    <loc>http://jayuee.com/2020/03/27/PicGo+GitHub+cdn%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</loc>
     
-    <lastmod>2020-03-27T11:44:29.402Z</lastmod>
+    <lastmod>2020-03-28T04:27:24.250Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jayuee.com/2020/03/26/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://jayuee.com/2020/03/24/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%20%E5%8A%A0%E8%BD%BD%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E4%BF%9D%E5%AD%98%E5%9B%BE%E5%83%8F/</loc>
     
-    <lastmod>2020-03-27T11:20:36.609Z</lastmod>
+    <lastmod>2020-03-27T14:29:49.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jayuee.com/2020/03/26/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Mat%E5%AF%B9%E8%B1%A1/</loc>
+    
+    <lastmod>2020-03-27T14:29:41.445Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jayuee.com/2020/03/24/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E7%9F%A9%E9%98%B5%E7%9A%84%E6%8E%A9%E8%86%9C%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2020-03-27T14:29:32.606Z</lastmod>
     
   </url>
   
@@ -40,20 +54,6 @@
     <loc>http://jayuee.com/2020/03/24/VS2019%E9%85%8D%E7%BD%AEOpenCV4.1.0%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4/</loc>
     
     <lastmod>2020-03-26T05:03:26.059Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jayuee.com/2020/03/24/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%20%E5%8A%A0%E8%BD%BD%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E4%BF%9D%E5%AD%98%E5%9B%BE%E5%83%8F/</loc>
-    
-    <lastmod>2020-03-26T05:03:19.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jayuee.com/2020/03/24/OpenCV%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E7%9F%A9%E9%98%B5%E7%9A%84%E6%8E%A9%E8%86%9C%E6%93%8D%E4%BD%9C/</loc>
-    
-    <lastmod>2020-03-26T05:03:05.429Z</lastmod>
     
   </url>
   
